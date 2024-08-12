@@ -3,18 +3,14 @@
         Jobs
     </x-slot:heading>
 
-    <h1 class="text-xl">
-        Salarys in Brazil
-    </h1>
-
-    <ul>
+    <div class="space-y-4">
         @foreach ($jobs as $job)
-            <li>
-                <a href="/jobs/{{ $job['id'] }}" class="text-blue-900 hover:underline">
-                    {{ $job['title'] }}:
-                </a>
-                Pays R${{ $job['salary'] }} per month
-            </li>
+            <a href="/jobs/{{ $job->id }}" class="block px-4 py-6 border border-gray-500 rounded-lg">
+                <div class="font-bold text-blue-600">{{ $job->employer->name }}</div>
+                <div>
+                    <strong>{{ $job->title }}:</strong> Pays U${{ number_format($job->salary, 2) }} per year.
+                </div>
+            </a>
         @endforeach
-    </ul>
+    </div>
 </x-layout>

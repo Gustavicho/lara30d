@@ -19,7 +19,7 @@ class JobFactory extends Factory
     {
         return [
             'title' => fake()->jobTitle(),
-            'salary' => fake()->randomFloat(min: 1000, max: 100000),
+            'salary' => fake()->randomFloat(min: 20000, max: 200000),
             'employer_id' => Employer::factory(),
         ];
     }

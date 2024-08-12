@@ -1,9 +1,10 @@
 <x-layout>
     <x-slot:heading>
-        {{ $job['title'] }}
+        {{ $job->title }}
     </x-slot:heading>
 
     <p>
-        In Brazil that's job pays R${{ $job['salary'] }} in a Month!
+        The current salary is U${{ number_format($job->salary, 2) }} per yera, in
+        <strong>{{ $job->employer->name }}</strong> !
     </p>
 </x-layout>
