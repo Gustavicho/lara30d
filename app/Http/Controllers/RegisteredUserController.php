@@ -22,6 +22,8 @@ class RegisteredUserController extends Controller
             'password' => ['required', 'confirmed', Password::min(6)],
         ]);
 
+        // this dont make a relationship with a employer
+
         $user = User::create($attributes);
 
         Auth::login($user);
