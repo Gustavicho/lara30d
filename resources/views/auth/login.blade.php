@@ -22,10 +22,10 @@
                     <x-form-field>
                         <x-form-label>Password</x-form-label>
                         <div class="mt-2">
-                            <x-form-input name="pwd" id="pwd" type="password" value="{{ old('pwd') }}"
+                            <x-form-input name="password" id="password" type="password" value="{{ old('password') }}"
                                 required />
 
-                            <x-form-error name="pwd" />
+                            <x-form-error name="password" />
                         </div>
                     </x-form-field>
                 </div>

@@ -41,19 +41,19 @@
                     <x-form-field>
                         <x-form-label>Password</x-form-label>
                         <div class="mt-2">
-                            <x-form-input name="pwd" id="pwd" type="password" value="{{ old('pwd') }}"
+                            <x-form-input name="password" id="password" type="password" value="{{ old('password') }}"
                                 required />
 
-                            <x-form-error name="pwd" />
+                            <x-form-error name="password" />
                         </div>
                     </x-form-field>
 
                     <x-form-field>
                         <x-form-label>Confirm password</x-form-label>
                         <div class="mt-2">
-                            <x-form-input name="pwd_confirmation" id="pwd_confirmation" type="password" required />
+                            <x-form-input name="password_confirmation" id="password_confirmation" type="password" required />
 
-                            <x-form-error name="pwd_confirmation" />
+                            <x-form-error name="password_confirmation" />
                         </div>
                     </x-form-field>
                 </div>
