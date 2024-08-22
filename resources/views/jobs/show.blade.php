@@ -12,7 +12,7 @@
         <strong>{{ $job->employer->name }}</strong> !
     </p>
 
-    @can('edit-job', $job)
+    @can('edit', $job)
         <div class="mt-4">
             <x-button href="/jobs/{{ $job->id }}/edit">Edit job</x-button>
         </div>
